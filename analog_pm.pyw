@@ -12,8 +12,10 @@ def create_clock_window():
 	# Add this line to make the window always on top
     root.attributes('-topmost', True) 
     # Set a minimum size for the window
-    root.minsize(200, 200)
-
+    root.minsize(185, 185)
+	# Set the initial size to the minimum size
+    root.geometry("185x185")
+	
     # Create a canvas to draw the clock on
     canvas = tk.Canvas(root, bg="#ffffff")
     canvas.pack(expand=True, fill='both')
